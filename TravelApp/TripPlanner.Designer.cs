@@ -98,6 +98,7 @@
             this.cbAct3.TabIndex = 2;
             this.cbAct3.Text = "act3";
             this.cbAct3.UseVisualStyleBackColor = true;
+            this.cbAct3.CheckedChanged += new System.EventHandler(this.cbAct3_CheckedChanged);
             // 
             // cbAct2
             // 
@@ -108,6 +109,7 @@
             this.cbAct2.TabIndex = 1;
             this.cbAct2.Text = "act2";
             this.cbAct2.UseVisualStyleBackColor = true;
+            this.cbAct2.CheckedChanged += new System.EventHandler(this.cbAct2_CheckedChanged);
             // 
             // cbAct1
             // 
@@ -118,6 +120,7 @@
             this.cbAct1.TabIndex = 0;
             this.cbAct1.Text = "act1";
             this.cbAct1.UseVisualStyleBackColor = true;
+            this.cbAct1.CheckedChanged += new System.EventHandler(this.cbAct1_CheckedChanged);
             // 
             // gbFood
             // 
@@ -140,6 +143,7 @@
             this.cbFood3.TabIndex = 2;
             this.cbFood3.Text = "food3";
             this.cbFood3.UseVisualStyleBackColor = true;
+            this.cbFood3.CheckedChanged += new System.EventHandler(this.cbFood3_CheckedChanged);
             // 
             // cbFood2
             // 
@@ -150,6 +154,7 @@
             this.cbFood2.TabIndex = 1;
             this.cbFood2.Text = "food2";
             this.cbFood2.UseVisualStyleBackColor = true;
+            this.cbFood2.CheckedChanged += new System.EventHandler(this.cbFood2_CheckedChanged);
             // 
             // cbFood1
             // 
@@ -160,6 +165,7 @@
             this.cbFood1.TabIndex = 0;
             this.cbFood1.Text = "food1";
             this.cbFood1.UseVisualStyleBackColor = true;
+            this.cbFood1.CheckedChanged += new System.EventHandler(this.cbFood1_CheckedChanged);
             // 
             // gbHotel
             // 
@@ -172,6 +178,7 @@
             this.gbHotel.TabIndex = 4;
             this.gbHotel.TabStop = false;
             this.gbHotel.Text = "Hotel";
+            this.gbHotel.Enter += new System.EventHandler(this.gbHotel_Enter);
             // 
             // rdoHotel3
             // 

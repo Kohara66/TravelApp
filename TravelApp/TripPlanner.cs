@@ -15,8 +15,8 @@ namespace TravelApp
         private class Item
         {
             public string Name;
-            public int Value;
-            public Item(string name, int value)
+            public double Value;
+            public Item(string name, double value)
             {
                 Name = name; Value = value;
             }
@@ -29,8 +29,8 @@ namespace TravelApp
         public TripPlanner()
         {
             InitializeComponent();
-            comboBox1.Items.Add(new Item("New Orleans", 550));
-            comboBox1.Items.Add(new Item("Hawaii- Honolulu", 650));
+            comboBox1.Items.Add(new Item("New Orleans", 550.00));
+            comboBox1.Items.Add(new Item("Hawaii- Honolulu", 650.00));
             //comboBox1.Items.Add(new Item("New Zealand", 2000));
         }
 
@@ -68,6 +68,7 @@ namespace TravelApp
                 rdoHotel1.Text = "Drury Inn & Suites $100.00/per night";
                 rdoHotel2.Text = "Aloft New Orleans Downtown $150.00/ per night";
                 rdoHotel3.Text = "The Pontchartrain Hotel $325.00/ per night";
+                lbSum.Items.Add(new Item("Hawaii- Honolulu", 650.00));
             }
             else if (comboBox1.SelectedIndex == 1)
             {
@@ -80,13 +81,99 @@ namespace TravelApp
                 rdoHotel1.Text = "Royal Hawaian Resort $85.00/per night";
                 rdoHotel2.Text = "Halekulani $95.00/per night";
                 rdoHotel3.Text = "Aulani Disney Resort and spa $105.00/per night";
+                lbSum.Items.Add(new Item("New Orleans", 550.00));
             }
 
         }
 
-        
+        private void cbAct1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbAct1.Checked == true)
+            {
+                lbSum.Items.Add(cbAct1.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbAct1.Text);
+            }
+        }
 
+        private void cbAct2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbAct2.Checked == true)
+            {
+                lbSum.Items.Add(cbAct2.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbAct2.Text);
+            }
+        }
 
+        private void cbAct3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbAct3.Checked == true)
+            {
+                lbSum.Items.Add(cbAct3.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbAct3.Text);
+            }
+        }
 
+        private void cbFood1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFood1.Checked == true)
+            {
+                lbSum.Items.Add(cbFood1.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbFood1.Text);
+            }
+        }
+
+        private void cbFood2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFood2.Checked == true)
+            {
+                lbSum.Items.Add(cbFood2.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbFood2.Text);
+            }
+        }
+
+        private void cbFood3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbFood3.Checked == true)
+            {
+                lbSum.Items.Add(cbFood3.Text);
+            }
+            else
+            {
+                lbSum.Items.Remove(cbFood3.Text);
+            }
+        }
+
+        private void gbHotel_Enter(object sender, EventArgs e)
+        {
+            if (rdoHotel1.Checked == true)
+            {
+                lbSum.Items.Add(rdoHotel1.Text);
+            }
+            if (rdoHotel2.Checked == true)
+            {
+                lbSum.Items.Add(rdoHotel2.Text);
+            }
+            if (rdoHotel3.Checked == true)
+            {
+                lbSum.Items.Add(rdoHotel3.Text);
+            } 
+
+            
+        }
     }
 }
