@@ -190,6 +190,7 @@
             this.rdoHotel3.TabStop = true;
             this.rdoHotel3.Text = "hotel3";
             this.rdoHotel3.UseVisualStyleBackColor = true;
+            this.rdoHotel3.CheckedChanged += new System.EventHandler(this.rdoHotel3_CheckedChanged);
             // 
             // rdoHotel2
             // 
@@ -201,6 +202,7 @@
             this.rdoHotel2.TabStop = true;
             this.rdoHotel2.Text = "hotel2";
             this.rdoHotel2.UseVisualStyleBackColor = true;
+            this.rdoHotel2.CheckedChanged += new System.EventHandler(this.rdoHotel2_CheckedChanged);
             // 
             // rdoHotel1
             // 
@@ -212,6 +214,7 @@
             this.rdoHotel1.TabStop = true;
             this.rdoHotel1.Text = "hotel1";
             this.rdoHotel1.UseVisualStyleBackColor = true;
+            this.rdoHotel1.CheckedChanged += new System.EventHandler(this.rdoHotel1_CheckedChanged);
             // 
             // label2
             // 

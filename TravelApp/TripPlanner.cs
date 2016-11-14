@@ -160,20 +160,43 @@ namespace TravelApp
 
         private void gbHotel_Enter(object sender, EventArgs e)
         {
+            
+        }
+
+        private void rdoHotel1_CheckedChanged(object sender, EventArgs e)
+        {
             if (rdoHotel1.Checked == true)
             {
                 lbSum.Items.Add(rdoHotel1.Text);
             }
+            else
+            {
+                lbSum.Items.Remove(rdoHotel1.Text);
+            }
+        }
+
+        private void rdoHotel2_CheckedChanged(object sender, EventArgs e)
+        {
             if (rdoHotel2.Checked == true)
             {
                 lbSum.Items.Add(rdoHotel2.Text);
             }
+            else
+            {
+                lbSum.Items.Remove(rdoHotel2.Text);
+            }
+        }
+
+        private void rdoHotel3_CheckedChanged(object sender, EventArgs e)
+        {
             if (rdoHotel3.Checked == true)
             {
                 lbSum.Items.Add(rdoHotel3.Text);
-            } 
-
-            
+            }
+            else
+            {
+                lbSum.Items.Remove(rdoHotel3.Text);
+            }
         }
     }
 }
