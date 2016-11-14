@@ -31,17 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gbActive = new System.Windows.Forms.GroupBox();
-            this.gbFood = new System.Windows.Forms.GroupBox();
-            this.gbHotel = new System.Windows.Forms.GroupBox();
-            this.cbAct1 = new System.Windows.Forms.CheckBox();
-            this.cbAct2 = new System.Windows.Forms.CheckBox();
             this.cbAct3 = new System.Windows.Forms.CheckBox();
-            this.cbFood1 = new System.Windows.Forms.CheckBox();
-            this.cbFood2 = new System.Windows.Forms.CheckBox();
+            this.cbAct2 = new System.Windows.Forms.CheckBox();
+            this.cbAct1 = new System.Windows.Forms.CheckBox();
+            this.gbFood = new System.Windows.Forms.GroupBox();
             this.cbFood3 = new System.Windows.Forms.CheckBox();
-            this.rdoHotel1 = new System.Windows.Forms.RadioButton();
-            this.rdoHotel2 = new System.Windows.Forms.RadioButton();
+            this.cbFood2 = new System.Windows.Forms.CheckBox();
+            this.cbFood1 = new System.Windows.Forms.CheckBox();
+            this.gbHotel = new System.Windows.Forms.GroupBox();
             this.rdoHotel3 = new System.Windows.Forms.RadioButton();
+            this.rdoHotel2 = new System.Windows.Forms.RadioButton();
+            this.rdoHotel1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -84,54 +84,10 @@
             this.gbActive.Controls.Add(this.cbAct1);
             this.gbActive.Location = new System.Drawing.Point(16, 76);
             this.gbActive.Name = "gbActive";
-            this.gbActive.Size = new System.Drawing.Size(200, 100);
+            this.gbActive.Size = new System.Drawing.Size(224, 100);
             this.gbActive.TabIndex = 2;
             this.gbActive.TabStop = false;
             this.gbActive.Text = "Activities";
-            // 
-            // gbFood
-            // 
-            this.gbFood.Controls.Add(this.cbFood3);
-            this.gbFood.Controls.Add(this.cbFood2);
-            this.gbFood.Controls.Add(this.cbFood1);
-            this.gbFood.Location = new System.Drawing.Point(13, 183);
-            this.gbFood.Name = "gbFood";
-            this.gbFood.Size = new System.Drawing.Size(200, 100);
-            this.gbFood.TabIndex = 3;
-            this.gbFood.TabStop = false;
-            this.gbFood.Text = "Food";
-            // 
-            // gbHotel
-            // 
-            this.gbHotel.Controls.Add(this.rdoHotel3);
-            this.gbHotel.Controls.Add(this.rdoHotel2);
-            this.gbHotel.Controls.Add(this.rdoHotel1);
-            this.gbHotel.Location = new System.Drawing.Point(13, 290);
-            this.gbHotel.Name = "gbHotel";
-            this.gbHotel.Size = new System.Drawing.Size(200, 100);
-            this.gbHotel.TabIndex = 4;
-            this.gbHotel.TabStop = false;
-            this.gbHotel.Text = "Hotel";
-            // 
-            // cbAct1
-            // 
-            this.cbAct1.AutoSize = true;
-            this.cbAct1.Location = new System.Drawing.Point(7, 20);
-            this.cbAct1.Name = "cbAct1";
-            this.cbAct1.Size = new System.Drawing.Size(47, 17);
-            this.cbAct1.TabIndex = 0;
-            this.cbAct1.Text = "act1";
-            this.cbAct1.UseVisualStyleBackColor = true;
-            // 
-            // cbAct2
-            // 
-            this.cbAct2.AutoSize = true;
-            this.cbAct2.Location = new System.Drawing.Point(7, 44);
-            this.cbAct2.Name = "cbAct2";
-            this.cbAct2.Size = new System.Drawing.Size(47, 17);
-            this.cbAct2.TabIndex = 1;
-            this.cbAct2.Text = "act2";
-            this.cbAct2.UseVisualStyleBackColor = true;
             // 
             // cbAct3
             // 
@@ -143,25 +99,37 @@
             this.cbAct3.Text = "act3";
             this.cbAct3.UseVisualStyleBackColor = true;
             // 
-            // cbFood1
+            // cbAct2
             // 
-            this.cbFood1.AutoSize = true;
-            this.cbFood1.Location = new System.Drawing.Point(7, 20);
-            this.cbFood1.Name = "cbFood1";
-            this.cbFood1.Size = new System.Drawing.Size(53, 17);
-            this.cbFood1.TabIndex = 0;
-            this.cbFood1.Text = "food1";
-            this.cbFood1.UseVisualStyleBackColor = true;
+            this.cbAct2.AutoSize = true;
+            this.cbAct2.Location = new System.Drawing.Point(7, 44);
+            this.cbAct2.Name = "cbAct2";
+            this.cbAct2.Size = new System.Drawing.Size(47, 17);
+            this.cbAct2.TabIndex = 1;
+            this.cbAct2.Text = "act2";
+            this.cbAct2.UseVisualStyleBackColor = true;
             // 
-            // cbFood2
+            // cbAct1
             // 
-            this.cbFood2.AutoSize = true;
-            this.cbFood2.Location = new System.Drawing.Point(7, 44);
-            this.cbFood2.Name = "cbFood2";
-            this.cbFood2.Size = new System.Drawing.Size(53, 17);
-            this.cbFood2.TabIndex = 1;
-            this.cbFood2.Text = "food2";
-            this.cbFood2.UseVisualStyleBackColor = true;
+            this.cbAct1.AutoSize = true;
+            this.cbAct1.Location = new System.Drawing.Point(7, 20);
+            this.cbAct1.Name = "cbAct1";
+            this.cbAct1.Size = new System.Drawing.Size(47, 17);
+            this.cbAct1.TabIndex = 0;
+            this.cbAct1.Text = "act1";
+            this.cbAct1.UseVisualStyleBackColor = true;
+            // 
+            // gbFood
+            // 
+            this.gbFood.Controls.Add(this.cbFood3);
+            this.gbFood.Controls.Add(this.cbFood2);
+            this.gbFood.Controls.Add(this.cbFood1);
+            this.gbFood.Location = new System.Drawing.Point(13, 183);
+            this.gbFood.Name = "gbFood";
+            this.gbFood.Size = new System.Drawing.Size(227, 100);
+            this.gbFood.TabIndex = 3;
+            this.gbFood.TabStop = false;
+            this.gbFood.Text = "Food";
             // 
             // cbFood3
             // 
@@ -173,16 +141,48 @@
             this.cbFood3.Text = "food3";
             this.cbFood3.UseVisualStyleBackColor = true;
             // 
-            // rdoHotel1
+            // cbFood2
             // 
-            this.rdoHotel1.AutoSize = true;
-            this.rdoHotel1.Location = new System.Drawing.Point(7, 20);
-            this.rdoHotel1.Name = "rdoHotel1";
-            this.rdoHotel1.Size = new System.Drawing.Size(54, 17);
-            this.rdoHotel1.TabIndex = 0;
-            this.rdoHotel1.TabStop = true;
-            this.rdoHotel1.Text = "hotel1";
-            this.rdoHotel1.UseVisualStyleBackColor = true;
+            this.cbFood2.AutoSize = true;
+            this.cbFood2.Location = new System.Drawing.Point(7, 44);
+            this.cbFood2.Name = "cbFood2";
+            this.cbFood2.Size = new System.Drawing.Size(53, 17);
+            this.cbFood2.TabIndex = 1;
+            this.cbFood2.Text = "food2";
+            this.cbFood2.UseVisualStyleBackColor = true;
+            // 
+            // cbFood1
+            // 
+            this.cbFood1.AutoSize = true;
+            this.cbFood1.Location = new System.Drawing.Point(7, 20);
+            this.cbFood1.Name = "cbFood1";
+            this.cbFood1.Size = new System.Drawing.Size(53, 17);
+            this.cbFood1.TabIndex = 0;
+            this.cbFood1.Text = "food1";
+            this.cbFood1.UseVisualStyleBackColor = true;
+            // 
+            // gbHotel
+            // 
+            this.gbHotel.Controls.Add(this.rdoHotel3);
+            this.gbHotel.Controls.Add(this.rdoHotel2);
+            this.gbHotel.Controls.Add(this.rdoHotel1);
+            this.gbHotel.Location = new System.Drawing.Point(13, 290);
+            this.gbHotel.Name = "gbHotel";
+            this.gbHotel.Size = new System.Drawing.Size(242, 100);
+            this.gbHotel.TabIndex = 4;
+            this.gbHotel.TabStop = false;
+            this.gbHotel.Text = "Hotel";
+            // 
+            // rdoHotel3
+            // 
+            this.rdoHotel3.AutoSize = true;
+            this.rdoHotel3.Location = new System.Drawing.Point(7, 68);
+            this.rdoHotel3.Name = "rdoHotel3";
+            this.rdoHotel3.Size = new System.Drawing.Size(54, 17);
+            this.rdoHotel3.TabIndex = 2;
+            this.rdoHotel3.TabStop = true;
+            this.rdoHotel3.Text = "hotel3";
+            this.rdoHotel3.UseVisualStyleBackColor = true;
             // 
             // rdoHotel2
             // 
@@ -195,16 +195,16 @@
             this.rdoHotel2.Text = "hotel2";
             this.rdoHotel2.UseVisualStyleBackColor = true;
             // 
-            // rdoHotel3
+            // rdoHotel1
             // 
-            this.rdoHotel3.AutoSize = true;
-            this.rdoHotel3.Location = new System.Drawing.Point(7, 68);
-            this.rdoHotel3.Name = "rdoHotel3";
-            this.rdoHotel3.Size = new System.Drawing.Size(54, 17);
-            this.rdoHotel3.TabIndex = 2;
-            this.rdoHotel3.TabStop = true;
-            this.rdoHotel3.Text = "hotel3";
-            this.rdoHotel3.UseVisualStyleBackColor = true;
+            this.rdoHotel1.AutoSize = true;
+            this.rdoHotel1.Location = new System.Drawing.Point(7, 20);
+            this.rdoHotel1.Name = "rdoHotel1";
+            this.rdoHotel1.Size = new System.Drawing.Size(54, 17);
+            this.rdoHotel1.TabIndex = 0;
+            this.rdoHotel1.TabStop = true;
+            this.rdoHotel1.Text = "hotel1";
+            this.rdoHotel1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -270,9 +270,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(252, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 13);
+            this.label5.Size = new System.Drawing.Size(10, 13);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Travel Summary:";
+            this.label5.Text = " ";
             // 
             // btnCalc
             // 

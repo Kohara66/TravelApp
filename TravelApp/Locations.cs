@@ -9,14 +9,18 @@ namespace TravelApp
 
     public class Locations
     {
-        public string Text { get; set; }
-        public string Value { get; set; }
+        private string[] Act1 =
+            { "Art Gallery Tour \r\t $0.00","Mardi Gras World \r\t $19.95",
+            "VIP Private Carriage Tour \r\t $100.00"};
 
-        public Locations(string text, string value)
-        {
-            this.Text = text;
-            this.Value = value;
-        }
+        private string[] Food1=
+            { "Donuts. Sliders. Brew. \r\t $10.00", "Antoines \r\t $20.00",
+            "Commander's Palace \r\t $15.00"};
+
+        private string[] Hotel1 =
+            {"Drury Inn & Suites/per night \r\t $100.00","Aloft New Orleans Downtown/per night \r\t $150.00",
+            "The Pontchartrain Hotel/per night \r\t $325.00"};
+
     }
 }
 
