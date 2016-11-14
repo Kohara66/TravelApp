@@ -9,6 +9,16 @@ namespace TravelApp
 
     public class Locations
     {
+
+        private string price = "";
+
+        public string Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
+
+
         private string[] Act1 =
             { "Art Gallery Tour \r\t $0.00","Mardi Gras World \r\t $19.95",
             "VIP Private Carriage Tour \r\t $100.00"};

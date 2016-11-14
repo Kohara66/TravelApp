@@ -12,7 +12,7 @@ namespace TravelApp
 {
     public partial class TripPlanner : Form
     {
-        private class Item
+        public class Item
         {
             public string Name;
             public double Value;
@@ -59,16 +59,16 @@ namespace TravelApp
 
             if (comboBox1.SelectedIndex == 0)
             {
-                cbAct1.Text = "Art Gallery Tour, $0.00";
-                cbAct2.Text = "Mardi Gras World, $19.95";
+                cbAct1.Text = Convert.ToString(new Item ("Art Gallery Tour, $0.00", 0.00)); //make others look like this to get values
+                cbAct2.Text = Convert.ToString(new Item ("Mardi Gras World, $19.95", 19.95));
                 cbAct3.Text = "VIP Private Carriage tour, $100.00";
                 cbFood1.Text = "Donuts. Sliders. Brew. , $10.00";
                 cbFood2.Text = "Antoines, $20.00";
                 cbFood3.Text = "Commander's Palace, $30.00";
-                rdoHotel1.Text = "Drury Inn & Suites $100.00/per night";
-                rdoHotel2.Text = "Aloft New Orleans Downtown $150.00/ per night";
-                rdoHotel3.Text = "The Pontchartrain Hotel $325.00/ per night";
-                lbSum.Items.Add(new Item("Hawaii- Honolulu", 650.00));
+                rdoHotel1.Text = "Drury Inn & Suites/per night, $100.00";
+                rdoHotel2.Text = "Aloft New Orleans Downtown/per night, $150.00";
+                rdoHotel3.Text = "The Pontchartrain Hotel/per night, $325.00";
+               lbSum.Items.Add(new Item("New Orleans", 550.00));
             }
             else if (comboBox1.SelectedIndex == 1)
             {
@@ -78,10 +78,10 @@ namespace TravelApp
                 cbFood1.Text = "Dunkin Doughnuts, $10.00";
                 cbFood2.Text = "Teshima's, $40.00";
                 cbFood3.Text = "Roy Waikiki's, $50.00";
-                rdoHotel1.Text = "Royal Hawaian Resort $85.00/per night";
-                rdoHotel2.Text = "Halekulani $95.00/per night";
-                rdoHotel3.Text = "Aulani Disney Resort and spa $105.00/per night";
-                lbSum.Items.Add(new Item("New Orleans", 550.00));
+                rdoHotel1.Text = "Royal Hawaian Resort/per night, $85.00";
+                rdoHotel2.Text = "Halekulani/per night, $95.00";
+                rdoHotel3.Text = "Aulani Disney Resort and spa/per night, $105.00";
+                lbSum.Items.Add(new Item("Hawaii- Honolulu", 650.00));
             }
 
         }
@@ -97,6 +97,7 @@ namespace TravelApp
                 lbSum.Items.Remove(cbAct1.Text);
             }
         }
+    
 
         private void cbAct2_CheckedChanged(object sender, EventArgs e)
         {
@@ -198,5 +199,27 @@ namespace TravelApp
                 lbSum.Items.Remove(rdoHotel3.Text);
             }
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)// this area needs work
+        {
+            string list = ((string)lbSum.SelectedItem);
+            string[] split = list.Split(',');
+            string name = split[0].Trim();
+
+            foreach (var item in lbSum.Items)
+
+            {
+                decimal price = Convert.ToDecimal(split[1]);
+
+                subtotal = Convert.ToDouble(price);
+
+
+                txtSubtotal.Text = subtotal.ToString("c2");
+            }
+        }
+
+        
     }
+
+
 }
