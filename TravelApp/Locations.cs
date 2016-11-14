@@ -21,6 +21,17 @@ namespace TravelApp
             {"Drury Inn & Suites/per night \r\t $100.00","Aloft New Orleans Downtown/per night \r\t $150.00",
             "The Pontchartrain Hotel/per night \r\t $325.00"};
 
+        private string[] Act2 =
+                    { "Sight Seeing \r\t $0.00","Beach day \r\t $49.95",
+            "Zipline \r\t $200.00"};
+
+        private string[] Food2 =
+            { "Dunkin Doughnuts \r\t $10.00", "Teshima's \r\t $40.00",
+            "Roy Waikiki's \r\t $50.00"};
+
+        private string[] Hotel2 =
+            {"Royal Hawaian Resort/per night \r\t $85.00","Halekulani/per night \r\t $95.00",
+            "Aulani Disney Resort and spa/per night \r\t $105.00"};
     }
 }
 
