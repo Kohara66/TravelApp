@@ -53,6 +53,7 @@
             this.btnCalc = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.gbActive.SuspendLayout();
             this.gbFood.SuspendLayout();
             this.gbHotel.SuspendLayout();
@@ -61,7 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 26);
+            this.label1.Location = new System.Drawing.Point(18, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 0;
@@ -70,7 +71,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(119, 26);
+            this.comboBox1.Location = new System.Drawing.Point(119, 35);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
@@ -82,6 +83,8 @@
             this.gbActive.Controls.Add(this.cbAct3);
             this.gbActive.Controls.Add(this.cbAct2);
             this.gbActive.Controls.Add(this.cbAct1);
+            this.gbActive.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbActive.ForeColor = System.Drawing.Color.Green;
             this.gbActive.Location = new System.Drawing.Point(16, 76);
             this.gbActive.Name = "gbActive";
             this.gbActive.Size = new System.Drawing.Size(224, 100);
@@ -92,6 +95,8 @@
             // cbAct3
             // 
             this.cbAct3.AutoSize = true;
+            this.cbAct3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAct3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbAct3.Location = new System.Drawing.Point(7, 68);
             this.cbAct3.Name = "cbAct3";
             this.cbAct3.Size = new System.Drawing.Size(47, 17);
@@ -103,6 +108,8 @@
             // cbAct2
             // 
             this.cbAct2.AutoSize = true;
+            this.cbAct2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAct2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbAct2.Location = new System.Drawing.Point(7, 44);
             this.cbAct2.Name = "cbAct2";
             this.cbAct2.Size = new System.Drawing.Size(47, 17);
@@ -114,6 +121,8 @@
             // cbAct1
             // 
             this.cbAct1.AutoSize = true;
+            this.cbAct1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAct1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbAct1.Location = new System.Drawing.Point(7, 20);
             this.cbAct1.Name = "cbAct1";
             this.cbAct1.Size = new System.Drawing.Size(47, 17);
@@ -127,6 +136,8 @@
             this.gbFood.Controls.Add(this.cbFood3);
             this.gbFood.Controls.Add(this.cbFood2);
             this.gbFood.Controls.Add(this.cbFood1);
+            this.gbFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbFood.ForeColor = System.Drawing.Color.Red;
             this.gbFood.Location = new System.Drawing.Point(13, 183);
             this.gbFood.Name = "gbFood";
             this.gbFood.Size = new System.Drawing.Size(227, 100);
@@ -137,6 +148,8 @@
             // cbFood3
             // 
             this.cbFood3.AutoSize = true;
+            this.cbFood3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFood3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbFood3.Location = new System.Drawing.Point(7, 68);
             this.cbFood3.Name = "cbFood3";
             this.cbFood3.Size = new System.Drawing.Size(53, 17);
@@ -148,6 +161,8 @@
             // cbFood2
             // 
             this.cbFood2.AutoSize = true;
+            this.cbFood2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFood2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbFood2.Location = new System.Drawing.Point(7, 44);
             this.cbFood2.Name = "cbFood2";
             this.cbFood2.Size = new System.Drawing.Size(53, 17);
@@ -159,6 +174,8 @@
             // cbFood1
             // 
             this.cbFood1.AutoSize = true;
+            this.cbFood1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFood1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.cbFood1.Location = new System.Drawing.Point(7, 20);
             this.cbFood1.Name = "cbFood1";
             this.cbFood1.Size = new System.Drawing.Size(53, 17);
@@ -172,6 +189,8 @@
             this.gbHotel.Controls.Add(this.rdoHotel3);
             this.gbHotel.Controls.Add(this.rdoHotel2);
             this.gbHotel.Controls.Add(this.rdoHotel1);
+            this.gbHotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbHotel.ForeColor = System.Drawing.Color.Blue;
             this.gbHotel.Location = new System.Drawing.Point(13, 290);
             this.gbHotel.Name = "gbHotel";
             this.gbHotel.Size = new System.Drawing.Size(242, 100);
@@ -183,6 +202,8 @@
             // rdoHotel3
             // 
             this.rdoHotel3.AutoSize = true;
+            this.rdoHotel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoHotel3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rdoHotel3.Location = new System.Drawing.Point(7, 68);
             this.rdoHotel3.Name = "rdoHotel3";
             this.rdoHotel3.Size = new System.Drawing.Size(54, 17);
@@ -195,6 +216,8 @@
             // rdoHotel2
             // 
             this.rdoHotel2.AutoSize = true;
+            this.rdoHotel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoHotel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rdoHotel2.Location = new System.Drawing.Point(7, 44);
             this.rdoHotel2.Name = "rdoHotel2";
             this.rdoHotel2.Size = new System.Drawing.Size(54, 17);
@@ -207,6 +230,8 @@
             // rdoHotel1
             // 
             this.rdoHotel1.AutoSize = true;
+            this.rdoHotel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoHotel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rdoHotel1.Location = new System.Drawing.Point(7, 20);
             this.rdoHotel1.Name = "rdoHotel1";
             this.rdoHotel1.Size = new System.Drawing.Size(54, 17);
@@ -237,9 +262,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(261, 366);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(230, 393);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 13);
+            this.label4.Size = new System.Drawing.Size(112, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Estimate Total:";
             // 
@@ -261,7 +287,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(344, 363);
+            this.txtTotal.Location = new System.Drawing.Point(344, 390);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
@@ -290,7 +316,7 @@
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(75, 23);
             this.btnCalc.TabIndex = 13;
-            this.btnCalc.Text = "Calculate";
+            this.btnCalc.Text = "&Calculate";
             this.btnCalc.UseVisualStyleBackColor = true;
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
@@ -300,7 +326,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "C&lear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnExit
@@ -309,15 +335,25 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 16;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(41, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(196, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Team Project 12 - Edwin, Sonja, Happy ";
             // 
             // TripPlanner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 430);
+            this.ClientSize = new System.Drawing.Size(668, 483);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalc);
@@ -375,6 +411,7 @@
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label6;
     }
 }
 
