@@ -62,26 +62,26 @@ namespace TravelApp
             {
                 cbAct1.Text = Convert.ToString(new Item ("Art Gallery Tour, $0.00", 0.00)); //make others look like this to get values
                 cbAct2.Text = Convert.ToString(new Item ("Mardi Gras World, $19.95", 19.95));
-                cbAct3.Text = "VIP Private Carriage tour, $100.00";
-                cbFood1.Text = "Donuts. Sliders. Brew. , $10.00";
-                cbFood2.Text = "Antoines, $20.00";
-                cbFood3.Text = "Commander's Palace, $30.00";
-                rdoHotel1.Text = "Drury Inn & Suites/per night, $100.00";
-                rdoHotel2.Text = "Aloft New Orleans Downtown/per night, $150.00";
-                rdoHotel3.Text = "The Pontchartrain Hotel/per night, $325.00";
+                cbAct3.Text = Convert.ToString(new Item("VIP Private Carriage tour, $100.00", 100.00));
+                cbFood1.Text = Convert.ToString(new Item("Donuts. Sliders. Brew. , $10.00", 10.00));
+                cbFood2.Text = Convert.ToString(new Item("Antoines, $20.00", 20.00));
+                cbFood3.Text = Convert.ToString(new Item("Commander's Palace, $30.00", 30.00));
+                rdoHotel1.Text = Convert.ToString(new Item("Drury Inn & Suites/per night, $100.00", 100.00));
+                rdoHotel2.Text = Convert.ToString(new Item("Aloft New Orleans Downtown/per night, $150.00", 150.00));
+                rdoHotel3.Text = Convert.ToString(new Item("The Pontchartrain Hotel/per night, $325.00", 325.00));
                lbSum.Items.Add(new Item("New Orleans", 550.00));
             }
             else if (comboBox1.SelectedIndex == 1)//User clicked Hawaii, makes trip options available
             {
-                cbAct1.Text = "Sight Seeing, $0.00";
-                cbAct2.Text = "Beach Day, $49.95";
-                cbAct3.Text = "Zipline, $200.00";
-                cbFood1.Text = "Dunkin Doughnuts, $10.00";
-                cbFood2.Text = "Teshima's, $40.00";
-                cbFood3.Text = "Roy Waikiki's, $50.00";
-                rdoHotel1.Text = "Royal Hawaian Resort/per night, $85.00";
-                rdoHotel2.Text = "Halekulani/per night, $95.00";
-                rdoHotel3.Text = "Aulani Disney Resort and spa/per night, $105.00";
+                cbAct1.Text = Convert.ToString(new Item("Sight Seeing, $0.00", 0.00));
+                cbAct2.Text = Convert.ToString(new Item("Beach Day, $49.95", 49.95));
+                cbAct3.Text = Convert.ToString(new Item("Zipline, $200.00", 200.00));
+                cbFood1.Text = Convert.ToString(new Item("Dunkin Doughnuts, $10.00", 10.00));
+                cbFood2.Text = Convert.ToString(new Item("Teshima's, $40.00", 40.00));
+                cbFood3.Text = Convert.ToString(new Item("Roy Waikiki's, $50.00", 50.00));
+                rdoHotel1.Text = Convert.ToString(new Item("Royal Hawaian Resort/per night, $85.00", 85.00));
+                rdoHotel2.Text = Convert.ToString(new Item("Halekulani/per night, $95.00", 95.00));
+                rdoHotel3.Text = Convert.ToString(new Item("Aulani Disney Resort and spa/per night, $105.00", 105.00));
                 lbSum.Items.Add(new Item("Hawaii- Honolulu", 650.00));
             }
 
@@ -203,20 +203,13 @@ namespace TravelApp
 
         private void btnCalc_Click(object sender, EventArgs e)// this area needs work
         {
-            string list = ((string)lbSum.SelectedItem);
-            string[] split = list.Split(',');
-            string name = split[0].Trim();
-
-            foreach (var item in lbSum.Items)
-
-            {
-                decimal price = Convert.ToDecimal(split[1]);
-
-                subtotal = Convert.ToDouble(price);
 
 
-                txtSubtotal.Text = subtotal.ToString("c2");//convert, format and display in textbox
-            }
+            
+
+
+
+           txtSubtotal.Text = subtotal.ToString("c2");//convert, format and display in textbox
         }
 
         
