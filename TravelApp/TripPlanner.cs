@@ -30,8 +30,8 @@ namespace TravelApp
         public TripPlanner()
         {
             InitializeComponent();
-            comboBox1.Items.Add(new Item("New Orleans", 550.00));
-            comboBox1.Items.Add(new Item("Hawaii- Honolulu", 650.00));
+            comboBox1.Items.Add(new Item("New Orleans", 550.00));//add item to combobox
+            comboBox1.Items.Add(new Item("Hawaii- Honolulu", 650.00));//add item to combobox
             //comboBox1.Items.Add(new Item("New Zealand", 2000));
         }
 
@@ -52,13 +52,13 @@ namespace TravelApp
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();//closes the form
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 0)//User clicked New Orleans, makes trip options available
             {
                 cbAct1.Text = Convert.ToString(new Item ("Art Gallery Tour, $0.00", 0.00)); //make others look like this to get values
                 cbAct2.Text = Convert.ToString(new Item ("Mardi Gras World, $19.95", 19.95));
@@ -71,7 +71,7 @@ namespace TravelApp
                 rdoHotel3.Text = "The Pontchartrain Hotel/per night, $325.00";
                lbSum.Items.Add(new Item("New Orleans", 550.00));
             }
-            else if (comboBox1.SelectedIndex == 1)
+            else if (comboBox1.SelectedIndex == 1)//User clicked Hawaii, makes trip options available
             {
                 cbAct1.Text = "Sight Seeing, $0.00";
                 cbAct2.Text = "Beach Day, $49.95";
@@ -91,11 +91,11 @@ namespace TravelApp
         {
             if (cbAct1.Checked == true)
             {
-                lbSum.Items.Add(cbAct1.Text);
+                lbSum.Items.Add(cbAct1.Text);//add activity to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbAct1.Text);
+                lbSum.Items.Remove(cbAct1.Text);//remove item from summary box
             }
         }
     
@@ -104,11 +104,11 @@ namespace TravelApp
         {
             if (cbAct2.Checked == true)
             {
-                lbSum.Items.Add(cbAct2.Text);
+                lbSum.Items.Add(cbAct2.Text);//add activity to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbAct2.Text);
+                lbSum.Items.Remove(cbAct2.Text);//remove item from summary box
             }
         }
 
@@ -116,11 +116,11 @@ namespace TravelApp
         {
             if (cbAct3.Checked == true)
             {
-                lbSum.Items.Add(cbAct3.Text);
+                lbSum.Items.Add(cbAct3.Text);//add activity to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbAct3.Text);
+                lbSum.Items.Remove(cbAct3.Text);//remove item from summary box
             }
         }
 
@@ -128,11 +128,11 @@ namespace TravelApp
         {
             if (cbFood1.Checked == true)
             {
-                lbSum.Items.Add(cbFood1.Text);
+                lbSum.Items.Add(cbFood1.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbFood1.Text);
+                lbSum.Items.Remove(cbFood1.Text);//remove item from summary box
             }
         }
 
@@ -140,11 +140,11 @@ namespace TravelApp
         {
             if (cbFood2.Checked == true)
             {
-                lbSum.Items.Add(cbFood2.Text);
+                lbSum.Items.Add(cbFood2.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbFood2.Text);
+                lbSum.Items.Remove(cbFood2.Text);//remove item from summary box
             }
         }
 
@@ -152,11 +152,11 @@ namespace TravelApp
         {
             if (cbFood3.Checked == true)
             {
-                lbSum.Items.Add(cbFood3.Text);
+                lbSum.Items.Add(cbFood3.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(cbFood3.Text);
+                lbSum.Items.Remove(cbFood3.Text);//remove item from summary box
             }
         }
 
@@ -169,11 +169,11 @@ namespace TravelApp
         {
             if (rdoHotel1.Checked == true)
             {
-                lbSum.Items.Add(rdoHotel1.Text);
+                lbSum.Items.Add(rdoHotel1.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(rdoHotel1.Text);
+                lbSum.Items.Remove(rdoHotel1.Text);//remove item from summary box
             }
         }
 
@@ -181,11 +181,11 @@ namespace TravelApp
         {
             if (rdoHotel2.Checked == true)
             {
-                lbSum.Items.Add(rdoHotel2.Text);
+                lbSum.Items.Add(rdoHotel2.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(rdoHotel2.Text);
+                lbSum.Items.Remove(rdoHotel2.Text);//remove item from summary box
             }
         }
 
@@ -193,11 +193,11 @@ namespace TravelApp
         {
             if (rdoHotel3.Checked == true)
             {
-                lbSum.Items.Add(rdoHotel3.Text);
+                lbSum.Items.Add(rdoHotel3.Text);//add item to summary box
             }
             else
             {
-                lbSum.Items.Remove(rdoHotel3.Text);
+                lbSum.Items.Remove(rdoHotel3.Text);//remove item from summary box
             }
         }
 
@@ -215,7 +215,7 @@ namespace TravelApp
                 subtotal = Convert.ToDouble(price);
 
 
-                txtSubtotal.Text = subtotal.ToString("c2");
+                txtSubtotal.Text = subtotal.ToString("c2");//convert, format and display in textbox
             }
         }
 
